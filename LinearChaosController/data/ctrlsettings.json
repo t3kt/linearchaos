@@ -1,0 +1,186 @@
+{
+	"scene1ctrl1" :
+	{
+		"corename":"scene1ctrl1",
+		"ctrlname":"scene1intensity",
+		"type":"intensity",
+		"midicc":1,
+		"scene":1,
+		"ctrlnum":1
+	},
+	"scene1ctrl2" :
+	{
+		"corename":"scene1ctrl2",
+		"ctrlname":"scene1chaos",
+		"type":"chaos",
+		"midicc":2,
+		"scene":1,
+		"ctrlnum":2
+	},
+	"scene1ctrl3" :
+	{
+		"corename":"scene1ctrl3",
+		"ctrlname":"scene1distortion",
+		"type":"distortion",
+		"midicc":3,
+		"scene":1,
+		"ctrlnum":3
+	},
+	"scene1ctrl4" :
+	{
+		"corename":"scene1ctrl4",
+		"ctrlname":"scene1speed",
+		"type":"speed",
+		"midicc":4,
+		"scene":1,
+		"ctrlnum":4
+	},
+	
+	"scene2ctrl1" :
+	{
+		"corename":"scene2ctrl1",
+		"ctrlname":"scene2intensity",
+		"type":"intensity",
+		"midicc":81,
+		"scene":2,
+		"ctrlnum":1
+	},
+	"scene2ctrl2" :
+	{
+		"corename":"scene2ctrl2",
+		"ctrlname":"scene2chaos",
+		"type":"chaos",
+		"midicc":82,
+		"scene":2,
+		"ctrlnum":2
+	},
+	"scene2ctrl3" :
+	{
+		"corename":"scene2ctrl3",
+		"ctrlname":"scene2distortion",
+		"type":"distortion",
+		"midicc":83,
+		"scene":2,
+		"ctrlnum":3
+	},
+	"scene2ctrl4" :
+	{
+		"corename":"scene2ctrl4",
+		"ctrlname":"scene2speed",
+		"type":"speed",
+		"midicc":84,
+		"scene":2,
+		"ctrlnum":4
+	},
+	
+	"scene3ctrl1" :
+	{
+		"corename":"scene3ctrl1",
+		"ctrlname":"scene3intensity",
+		"type":"intensity",
+		"midicc":89,
+		"scene":3,
+		"ctrlnum":1
+	},
+	"scene3ctrl2" :
+	{
+		"corename":"scene3ctrl2",
+		"ctrlname":"scene3chaos",
+		"type":"chaos",
+		"midicc":90,
+		"scene":3,
+		"ctrlnum":2
+	},
+	"scene3ctrl3" :
+	{
+		"corename":"scene3ctrl3",
+		"ctrlname":"scene3distortion",
+		"type":"distortion",
+		"midicc":91,
+		"scene":3,
+		"ctrlnum":3
+	},
+	"scene3ctrl4" :
+	{
+		"corename":"scene3ctrl4",
+		"ctrlname":"scene3speed",
+		"type":"speed",
+		"midicc":92,
+		"scene":3,
+		"ctrlnum":4
+	},
+	
+	"scene4ctrl1" :
+	{
+		"corename":"scene4ctrl1",
+		"ctrlname":"scene4intensity",
+		"type":"intensity",
+		"midicc":97,
+		"scene":4,
+		"ctrlnum":1
+	},
+	"scene4ctrl2" :
+	{
+		"corename":"scene4ctrl2",
+		"ctrlname":"scene4chaos",
+		"type":"chaos",
+		"midicc":98,
+		"scene":4,
+		"ctrlnum":2
+	},
+	"scene4ctrl3" :
+	{
+		"corename":"scene4ctrl3",
+		"ctrlname":"scene4distortion",
+		"type":"distortion",
+		"midicc":99,
+		"scene":4,
+		"ctrlnum":3
+	},
+	"scene4ctrl4" :
+	{
+		"corename":"scene4ctrl4",
+		"ctrlname":"scene4speed",
+		"type":"speed",
+		"midicc":100,
+		"scene":4,
+		"ctrlnum":4
+	},
+	
+	"scene5ctrl1" :
+	{
+		"corename":"scene5ctrl1",
+		"ctrlname":"scene5intensity",
+		"type":"intensity",
+		"midicc":9,
+		"scene":5,
+		"ctrlnum":1
+	},
+	"scene5ctrl2" :
+	{
+		"corename":"scene5ctrl2",
+		"ctrlname":"scene5chaos",
+		"type":"chaos",
+		"midicc":10,
+		"scene":5,
+		"ctrlnum":2
+	},
+	"scene5ctrl3" :
+	{
+		"corename":"scene5ctrl3",
+		"ctrlname":"scene5distortion",
+		"type":"distortion",
+		"midicc":11,
+		"scene":5,
+		"ctrlnum":3
+	},
+	"scene5ctrl4" :
+	{
+		"corename":"scene5ctrl4",
+		"ctrlname":"scene5speed",
+		"type":"speed",
+		"midicc":12,
+		"scene":5,
+		"ctrlnum":4
+	}
+}
