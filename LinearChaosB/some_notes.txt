@@ -1,0 +1,58 @@
+opparm primitive1 
+	t
+		(
+			'$DX*chop("timing/time")*chop("primopts/distscale")*(rand($PR*1)*chop("primopts/distrand")+1)  '
+			'$DY*chop("timing/time")*chop("primopts/distscale")*(rand($PR*3)*chop("primopts/distrand")+1)  '
+			'$DZ*chop("timing/time")*chop("primopts/distscale")*(rand($PR*5)*chop("primopts/distrand")+1)  '
+		)
+	r
+		(
+			'chop("timing/time")*chop("primopts/rotscale")*(rand($PR*7)*chop("primopts/rotrand")*180-90)  '
+			'chop("timing/time")*chop("primopts/rotscale")*(rand($PR*11)*chop("primopts/rotrand")*180-90)  '
+			'chop("timing/time")*chop("primopts/rotscale")*(rand($PR*13)*chop("primopts/rotrand")*180-90)  '
+		)
+	s ( 1 1 1 )
+	p ( '$CEX' '$CEY' '$CEZ' )
+	upvector ( '$NX' '$NY' '$NZ' )
+	diff ( '$CR' '$CG' '$CB' )
+	alpha ( '$CA' ) 
+	
+	
+	docrease ( off ) crease ( '$CREASE' ) custom1 ( "" ) custom1size ( float ) custom1val ( 0 0 0 0 ) custom2 ( "" ) custom2size ( float ) custom2val ( 0 0 0 0 ) pshapeu ( off ) pshapev ( off ) closeu ( sameclosure ) closev ( sameclosure ) clampu ( sameclamp ) clampv ( sameclamp ) vtxsort ( samevertex ) vtxuoff ( 0 ) vtxvoff ( 0 ) metaweight ( on ) doweight ( '$WEIGHT' ) doprender ( off ) prtype ( lines )
+opcolor -c 0.545 0.545 0.545 primitive1
+opset -l off -m off -p on -C on -v on -a off -t off -f off -r off -d off -o off -b off -e on -k off -c on -i off -n off -D on -z 1 primitive1
+
+
+
+
+
+
+opparm primitive2 
+	t
+	( '$CEX*chop("splitvals/dispersal")' '$CEY*chop("splitvals/dispersal")' '$CEZ*chop("splitvals/dispersal")' )
+	r
+	(
+		'(rand($PR+17)-.5)*chop("scaledsplitvals/rotrand")'
+		'(rand($PR+19)-.5)*chop("scaledsplitvals/rotrand")'
+		'(rand($PR+23)-.5)*chop("scaledsplitvals/rotrand")'
+	)
+	s ( 2.1 2.1 2.1 )
+	p ( '$CEX' '$CEY' '$CEZ' )
+	upvector ( '$NX' '$NY' '$NZ' )
+	diff ( 0.455 0.455 0.455 )
+	alpha ( '$CA' )
+opcolor -c 0.545 0.545 0.545 primitive2
+opset -l off -m off -p on -C on -v on -a off -t off -f off -r off -d off -o off -b off -e on -k off -c on -i off -n off -D on -z 1 primitive2
+
+
+(rand($PR+17)-.5)*chop("scaledsplitvals/rotrand")
+(rand($PR+19)-.5)*chop("splitvals/rotrand"))*chop("splitvals/rotscale")
+(rand($PR+23)-.5)*chop("splitvals/rotrand")*chop("splitvals/rotscale")
+
+
+
+
+
+
+TIME: 4.566 ms
+TIME: 3.702 ms
