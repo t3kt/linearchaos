@@ -1,0 +1,107 @@
+cubes arranged forming the shell of a larger cube (without the insides)...
+N = number of cubes per edge
+
+cubes per side = N*N
+total cubes =
+	(N*N) +		// front
+	(N*N) + 	// back
+	4*((N-2)*(N-1))	// top, left, right, bottom
+
+
+~~ N=4
+	cubes= 16+16+(4*6) = 56
+~~ N=3
+		cubes should = 26
+	cubes= 9+9+(4*2)=26 (correct!)
+
+There are 3 distinct types of blocks on a cube:
+    Corner Block - It has three color faces and three adjacent pieces that it will share a side with at any time.
+    Edge Block - It has two color faces and has 4 adjacent pieces that it will share a side with at any time. In 3x3 blocks it always has 2 center pieces and 2 corner pieces.
+    Center block - In a 3x3 cube this piece is not movable, however it can be rotated. It will always have 4 adjacent edge blocks. In larger cubes there are multiple center blocks that could share with another center block or an edge piece. Center blocks never are adjacent to a corner block.
+
+
+maybe represent and refer to them based on their starting coordinates?
+	for N=3...
+	front:
+		(-1, 1,-1)	( 0, 1,-1)	( 1, 1,-1)
+		(-1, 0,-1)	( 0, 0,-1)	( 1, 0,-1)
+		(-1,-1,-1)	( 0,-1,-1)	( 1,-1,-1)
+	back:
+		(-1, 1, 1)	( 0, 1, 1)	( 1, 1, 1)
+		(-1, 0, 1)	( 0, 0, 1)	( 1, 0, 1)
+		(-1,-1, 1)	( 0,-1, 1)	( 1,-1, 1)
+	---------
+	left:
+		(-1, 1, 1)	(-1, 1, 0)	(-1, 1,-1)
+		(-1, 0, 1)	(-1, 0, 0)	(-1, 0,-1)
+		(-1,-1, 1)	(-1,-1, 0)	(-1,-1,-1)
+	right:
+		( 1, 1,-1)	( 1, 1, 0)	( 1, 1, 1)
+		( 1, 0,-1)	( 1, 0, 0)	( 1, 0, 1)
+		( 1,-1,-1)	( 1,-1, 0)	( 1,-1, 1)
+	---------
+	top:
+		(-1, 1, 1)	( 0, 1, 1)	( 1, 1, 1)
+		(-1, 1, 0)	( 0, 1, 0)	( 1, 1, 0)
+		(-1, 1,-1)	( 0, 1,-1)	( 1, 1,-1)
+	bottom:
+		( 1,-1,-1)	( 0,-1,-1)	(-1,-1,-1)
+		( 1,-1, 0)	( 0,-1, 0)	(-1,-1, 0)
+		( 1,-1, 1)	( 0,-1, 1)	(-1,-1, 1)
+		
+
+
+    0,N,N--------N,N,N
+      /            /
+     / |          /|
+    /  |         / |
+   / 0,0,N------/N,0,N
+0,N,0--------N,N,0 /
+  |  /         |  /
+  | /          | /
+  |/           |/
+0,0,0--------N,0,0
+
+
+
+
+     0,N,N--------N,N,N
+      /            /
+     / |          /|
+    /  |         / |
+   / 0,0,N------/N,0,N
+0,N,0--------N,N,0 /
+  |  /         |  /
+  | /          | /
+  |/           |/
+0,0,0--------N,0,0
+
+
+  front:
+    (0, 2,0)  ( 1, 2,0)  ( 2, 2,0)
+    (0, 1,0)  ( 1, 1,0)  ( 2, 1,0)
+    (0,0,0)  ( 1,0,0)  ( 2,0,0)
+  back:
+    (0, 2, 2)  (1, 2, 2)  (2, 2, 2)
+    (0, 1, 2)  (1, 1, 2)  (2, 1, 2)
+    (0, 0, 2)  (1, 0, 2)  (2, 0, 2)
+  ---------
+  left:
+    (0, 2, 2)  (0, 2, 1)  (0, 2, 0)
+    (0, 1, 2)  (0, 1, 1)  (0, 1, 0)
+    (0, 0, 2)  (0, 0, 1)  (0, 0, 0)
+  right:
+    (2, 2, 0)  (2, 2, 1)  (2, 2, 2)
+    (2, 1, 0)  (2, 1, 1)  (2, 1, 2)
+    (2, 0, 0)  (2, 0, 1)  (2, 0, 2)
+  ---------
+  top:
+    (0, 2, 2)  (1, 2, 2)  (2, 2, 2)
+    (0, 2, 1)  (1, 2, 1)  (2, 2, 1)
+    (0, 2, 0)  (1, 2, 0)  (2, 2, 0)
+  bottom:
+    (2, 0, 0)  (1, 0, 0)  (0, 0, 0)
+    (2, 0, 1)  (1, 0, 1)  (0, 0, 1)
+    (2, 0, 2)  (1, 0, 2)  (0, 0, 2)
+
+
